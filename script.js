@@ -1,6 +1,7 @@
 'use strict';
 
-/*
+
+
 ///////////////////////////////////////
 // Default Parameters
 const bookings = [];
@@ -19,7 +20,7 @@ const createBooking = function (
     numPassengers,
     price,
   };
-  console.log(booking);
+ // console.log(booking);
   bookings.push(booking);
 };
 
@@ -30,7 +31,9 @@ createBooking('LH123', 5);
 
 createBooking('LH123', undefined, 1000);
 
-
+createBooking()
+console.log(bookings[5])
+/*
 ///////////////////////////////////////
 // How Passing Arguments Works: Values vs. Reference
 const flight = 'LH234';
@@ -115,6 +118,7 @@ const greetArr = greeting => name => console.log(`${greeting} ${name}`);
 
 greetArr('Hi')('Jonas');
 
+*/
 
 ///////////////////////////////////////
 // The call and apply Methods
@@ -162,11 +166,12 @@ book.call(swiss, 583, 'Mary Cooper');
 
 // Apply method
 const flightData = [583, 'George Cooper'];
-book.apply(swiss, flightData);
-console.log(swiss);
+//book.apply(swiss, flightData);
+//console.log(swiss);
 
 book.call(swiss, ...flightData);
-
+console.log(swiss.bookings)
+/*
 ///////////////////////////////////////
 // The bind Method
 // book.call(eurowings, 23, 'Sarah Williams');
