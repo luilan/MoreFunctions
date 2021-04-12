@@ -171,6 +171,11 @@ const flightData = [583, 'George Cooper'];
 
 book.call(swiss, ...flightData);
 console.log(swiss.bookings)
+
+const fnsum = (a,b) => a+b
+console.log(fnsum(7,7))
+const add10 = fnsum.bind(null,10)
+console.log(add10(5))
 /*
 ///////////////////////////////////////
 // The bind Method
@@ -372,6 +377,7 @@ console.dir(f);
 h();
 f();
 console.dir(f);
+*/
 
 // Example 2
 const boardPassengers = function (n, wait) {
@@ -387,8 +393,8 @@ const boardPassengers = function (n, wait) {
 
 const perGroup = 1000;
 boardPassengers(180, 3);
-*/
 
+/*
 ///////////////////////////////////////
 // Coding Challenge #2
 
